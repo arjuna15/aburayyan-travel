@@ -1,0 +1,23 @@
+        // Update status setiap menit
+                updateAvailabilityStatus();
+                        setInterval(updateAvailabilityStatus, 60000);
+                                
+                                        // Konfirmasi sebelum membuka link eksternal
+                                                document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                                                            link.addEventListener('click', function(e) {
+                                                                            // Untuk demo, kita hanya log ke console
+                                                                                            console.log(`Membuka: ${this.href}`);
+                                                                                                            // Jika ingin konfirmasi, bisa aktifkan kode di bawah:
+                                                                                                                            // if(!confirm(`Anda akan meninggalkan halaman ini menuju ${this.innerText}. Lanjutkan?`)) {
+                                                                                                                                            //     e.preventDefault();
+                                                                                                                                                            // }
+                                                                                                                                                                        });
+                                                                                                                                                                                });
+                                                                                                                                                                                        
+                                                                                                                                                                                                // Pesan selamat datang
+                                                                                                                                                                                                        window.addEventListener('load', function() {
+                                                                                                                                                                                                                    console.log("Website Kontak Supir Arab siap digunakan!");
+                                                                                                                                                                                                                            });
+                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                                </html>
