@@ -1,23 +1,34 @@
-        // Update status setiap menit
-                updateAvailabilityStatus();
-                        setInterval(updateAvailabilityStatus, 60000);
-                                
-                                        // Konfirmasi sebelum membuka link eksternal
-                                                document.querySelectorAll('a[target="_blank"]').forEach(link => {
-                                                            link.addEventListener('click', function(e) {
-                                                                            // Untuk demo, kita hanya log ke console
-                                                                                            console.log(`Membuka: ${this.href}`);
-                                                                                                            // Jika ingin konfirmasi, bisa aktifkan kode di bawah:
-                                                                                                                            // if(!confirm(`Anda akan meninggalkan halaman ini menuju ${this.innerText}. Lanjutkan?`)) {
-                                                                                                                                            //     e.preventDefault();
-                                                                                                                                                            // }
-                                                                                                                                                                        });
-                                                                                                                                                                                });
-                                                                                                                                                                                        
-                                                                                                                                                                                                // Pesan selamat datang
-                                                                                                                                                                                                        window.addEventListener('load', function() {
-                                                                                                                                                                                                                    console.log("Website Kontak Supir Arab siap digunakan!");
-                                                                                                                                                                                                                            });
-                                                                                                                                                                                                                                </script>
-                                                                                                                                                                                                                                </body>
-                                                                                                                                                                                                                                </html>
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Kontak Supir Arab - LinkHub</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+                                <style>
+                                        * {
+                                                    margin: 0;
+                                                                padding: 0;
+                                                                            box-sizing: border-box;
+                                                                                        font-family: 'Poppins', sans-serif;
+                                                                                                }
+                                                                                                        
+                                                                                                                body {
+                                                                                                                            background: linear-gradient(135deg, #0c2461, #1e3799, #4a69bd);
+                                                                                                                                        color: #333;
+                                                                                                                                                    min-height: 100vh;
+                                                                                                                                                                padding: 20px;
+                                                                                                                                                                            display: flex;
+                                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                                                justify-content: center;
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                        .container {
+                                                                                                                                                                                                                                                    max-width: 500px;
+                                                                                                                                                                                                                                                                width: 100%;
